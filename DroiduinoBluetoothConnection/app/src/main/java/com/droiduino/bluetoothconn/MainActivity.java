@@ -19,6 +19,7 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
+import android.widget.Toast;
 
 
 import java.io.IOException;
@@ -137,11 +138,13 @@ public class MainActivity extends AppCompatActivity {
                         buttonToggle.setText("Turn Off");
                         // Command to turn on LED on Arduino. Must match with the command in Arduino code
                         cmdText = "111111111111";
+                        Toast.makeText(getApplicationContext(), "Turned ON", Toast.LENGTH_SHORT).show();
                         break;
                     case "turn off":
                         buttonToggle.setText("Turn On");
                         // Command to turn off LED on Arduino. Must match with the command in Arduino code
                         cmdText = "000000000000";
+                        Toast.makeText(getApplicationContext(), "Turned OFF", Toast.LENGTH_SHORT).show();
                         break;
                 }
                 // Send command to Arduino board
