@@ -133,6 +133,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 String cmdText = null;
                 String btnState = buttonToggle.getText().toString().toLowerCase();
+
                 switch (btnState){
                     case "turn on":
                         buttonToggle.setText("Turn Off");
