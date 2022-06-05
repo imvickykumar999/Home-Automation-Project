@@ -54,7 +54,7 @@ void loop() {
   while(Serial.available()>0){
     
       inputByte = Serial.read();
-      Serial.print(inputByte);
+      Serial.println(inputByte);
 //      Serial.write(inputByte);
       
       if (inputByte=='1'){
