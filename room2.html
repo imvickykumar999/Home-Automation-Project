@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart home Room 2</title>
+    <link rel="stylesheet" href="add.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        $(window).ready(function () {
+$("#toggle").click(function(){
+$(".controls").toggle();
+$(".middlesection").toggleClass('middlesectionn');
+
+}
+);
+$('#rooms').click(function(){
+window.location.href = 'index.html';
+});
+$('#homebutton').click(function(){
+window.location.href = 'index.html';
+});
+$('input').click(function(){
+
+$('#myModal').modal('show');
+$('.modal-body').text('');
+$('.modal-body').append('<br><br><br><br><br>');
+var x=0;
+for(var i=0;i<=2;i++){
+$('.modal-title').text('connecting');
+setTimeout(function() {
+    $('.modal-title').delay('slow').text('connecting.');}, x+400);
+    setTimeout(function() {
+    $('.modal-title').delay('slow').text('connecting..');}, x+800);
+    setTimeout(function() {
+    $('.modal-title').delay('slow').text('connecting...');}, x+1200);
+    setTimeout(function() {
+    $('.modal-title').delay('slow').text('connecting....');}, x+1600); x +=1600;}
+    setTimeout(function() {
+    $('.modal-title').delay('slow').text('Connection Failed');
+    $('.modal-body').delay('slow').text('!Operation Unsuccessfull');
+    $('.modal-body').append('<br><br><br><br><br>');
+    $("input").prop("checked", false);
+}, x);
+
+});
+
+        });
+    </script>
+</head>
+
+<body class="container">
+    <section class="row">
+        <section class="bg-white controls">
+            <section class="w-100">
+                <h4>Control</h4>
+            </section>
+            <section>
+                <button type="button" class="text-white" id="rooms">Rooms</button>
+            </section>
+            <section class="w-100">
+                <section class="row justify-content-around">
+                    <section class="w-50 text-center">
+                        <h5>Total Rooms</h5>
+                        <p>4 Rooms</p>
+                    </section>
+                    <section class="w-50 text-center">
+                        <h5>Total Devices</h5>
+                        <p>15</p>
+                    </section>
+                    <section class="w-50 text-center">
+                        <h5>Total Active Devices</h5>
+                        <p>0 devices</p>
+                    </section>
+                    <section class="w-50 text-center">
+                        <h5>Total Active Appliances</h5>
+                        <p>0 Appliances</p>
+                    </section>
+                </section>
+            </section>
+
+
+
+        </section>
+        <section class="middlesection">
+            <section class='w-100'>
+                <img src="imaage1.jpg" alt="image load Fail">
+            </section>
+            <section class="row w-100 justify-content-around">
+                <a id="toggle"><img src="right-arrow.png" alt=""></a>
+                <a href="#"><img src="bed.png" alt=""></a>
+                <a href="#"><img src="shower.png" alt=""></a>
+            </section>
+
+        </section>
+        <section class='row align-items-center rightsection'>
+            
+                <section class="w-50 ">
+                    <h1>2<small>nd</small>
+                    </h1>
+                    <h5 id="bedroom">BEDROOM</h5>
+                    <h5>WIFI SPEED: 5mbps</h5>
+                    <h5>Mode: Child</h5>
+                
+            </section>
+            <section class="w-50 text-light" id="style-4">
+                <section class="text-center">
+                    <h5>LIGHT</h5>
+                    <section><label class="switch">
+                            <input type="checkbox">
+                            <span class="slider round"></span>
+                        </label></section>
+                </section>
+                <section class="text-center">
+                    <h5>BED-LAMP(L)</h5>
+                    <section><label class="switch">
+                            <input type="checkbox">
+                            <span class="slider round"></span>
+                        </label></section>
+                </section>
+                <section class="text-center">
+                    <h5>BEDILAMP(R)</h5>
+                    <section><label class="switch">
+                            <input type="checkbox">
+                            <span class="slider round"></span>
+                        </label></section>
+                </section>
+                <section class="text-center">
+                    <h5>FAN</h5>
+                    <section><label class="switch">
+                            <input type="checkbox">
+                            <span class="slider round"></span>
+                        </label></section>
+                </section>
+                <section class="text-center">
+                    <h5>TV</h5>
+                    <section><label class="switch">
+                            <input type="checkbox">
+                            <span class="slider round"></span>
+                        </label></section>
+                </section>
+                <section class="text-center">
+                    <h5>LIGHT</h5>
+                    <section><label class="switch">
+                            <input type="checkbox">
+                            <span class="slider round"></span>
+                        </label></section>
+                </section>
+                <section class="text-center">
+                    <h5>UNDEFINED</h5>
+                    <section><label class="switch">
+                            <input type="checkbox">
+                            <span class="slider round"></span>
+                        </label></section>
+                </section>
+                <section class="text-center">
+                    <h5>UNDEFINED</h5>
+                    <section><label class="switch">
+                            <input type="checkbox">
+                            <span class="slider round"></span>
+                        </label></section>
+                </section>
+                <section class="text-center">
+                    <h5>UNDEFINED</h5>
+                    <section><label class="switch">
+                            <input type="checkbox">
+                            <span class="slider round"></span>
+                        </label></section>
+                </section>
+                <section class="text-center">
+                    <h5>UNDEFINED</h5>
+                    <section><label class="switch">
+                            <input type="checkbox">
+                            <span class="slider round"></span>
+                        </label></section>
+                </section>
+                <section class="text-center">
+                    <h5>UNDEFINED</h5>
+                    <section><label class="switch">
+                            <input type="checkbox">
+                            <span class="slider round"></span>
+                        </label></section>
+                </section>
+            </section>
+        </section>
+    </section>
+    <section class="row w-100  footer justify-content-between">
+        <section class="row">
+            <button type="button" id="homebutton" class=" text-light">
+                <img src="four-boxes.png" alt="Icon load fail"></button>
+            <section class="row" id="afterhome">
+                <section class="mx-5 my-2">
+                    <h6>NAME</h6>
+                    <p>Smart Home Automation</p>
+                </section>
+
+                <section class="mx-5 my-2">
+                    <h6>Contact</h6>
+                    <p>info@smartautomation.com</p>
+                </section>
+                <section class="mx-5 my-2">
+                    <h6>Active Appliances</h6>
+                    <p>0 Applisnces</p>
+                </section>
+                <section class="mx-5 my-2">
+                    <h6>Room No.</h6>
+                    <p>Room 2</p>
+                </section>
+            </section>
+        </section>
+        <section id="control"><h4 class=" text-light">CONTROL</h4></section>
+    </section>
+    <div class="modal " id="myModal">
+        <div class="modal-dialog ">
+          <div class="modal-content bg-dark">
+          
+            <!-- Modal Header -->
+            <div class="modal-header ">
+              <h4 class="modal-title text-light"></h4>
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            
+            <!-- Modal body -->
+            <div class="modal-body text-danger">
+              
+              
+            </div>
+            
+            <!-- Modal footer -->
+            <div class="modal-footer">
+              <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+      
+    
+</body>
+
+</html>

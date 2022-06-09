@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart home Automation</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+   <script>
+       $(window).ready(function(){
+$('#room1').click(function(){
+window.location.href = 'room1.html';
+});
+$('#room2').click(function(){
+window.location.href = 'room2.html';
+});
+$('#room3').click(function(){
+window.location.href = 'room3.html';
+});
+$('#room4').click(function(){
+window.location.href = 'room4.html';
+});
+       });
+   </script>
+   <style>
+        .roomsection{
+            border: 2px solid grey;
+            border-radius: 15px;
+            
+            width: 40% !important;
+            margin: 20px;
+        }
+        img {
+            width: 150px;
+            height: 150px;
+            border-radius: 15px;
+        }
+        h3{
+            margin-right:20% ;
+        }
+        h3:hover{
+            background-color: white !important;
+        }
+        h4{
+            color: grey;
+            text-align: right;
+            margin-bottom: 100px;
+        }
+
+        h3,
+        h1 {
+            color: rgb(179, 171, 171);
+        }
+
+        .heading {
+       text-align: center;
+        }
+        body{
+            background-color: rgba(37,37,37,255) !important;
+padding: 0px!important;
+        }
+    </style>
+</head>
+
+<body class="container">
+    <section class="heading">
+        <h1>SMART HOME AUTOMATION</h1>
+        <h4>Final Year Project</h4>
+    </section>
+    <section id=" homesection" class="row justify-content-around">
+
+        <section class="row justify-content-between roomsection align-items-center"><img src="room1image.jpg" alt="">
+            <h3 class="bg-success rounded-pill px-3 py-2 text-dark border border-primary" id="room1">ROOM 1</h3>
+        </section>
+        <section class="row justify-content-between roomsection align-items-center"><img src="imaage1.jpg" alt="">
+            <h3 class="bg-success rounded-pill px-3 py-2 text-dark border border-primary" id="room2">ROOM 2</h3>
+        </section>
+        <section class="row justify-content-between roomsection align-items-center"><img src="room3image.jpg" alt="">
+            <h3 class="bg-success rounded-pill px-3 py-2 text-dark border border-primary" id="room3">ROOM 3</h3>
+        </section>
+        <section class="row justify-content-between roomsection align-items-center"><img src="room4image.webp" alt="">
+            <h3 class="bg-success rounded-pill px-3 py-2 text-dark border border-primary" id="room4">ROOM 4</h3>
+        </section>
+    </section>
+</body>
+
+</html>
