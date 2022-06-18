@@ -55,14 +55,21 @@ void loop() {
     
       inputByte = Serial.read();
       Serial.println(inputByte);
-//      Serial.write(inputByte);
       
-      if (inputByte=='1'){
-      digitalWrite(13,HIGH);
-    }
+      if (inputByte == '1'){
+      digitalWrite(13, HIGH);
+      }
     
-    else if (inputByte=='0'){
-      digitalWrite(13,LOW);
-      } 
+      else if (inputByte == '0'){
+      digitalWrite(13, LOW);
+      }
+
+      else if (inputByte == '2'){
+      digitalWrite(7, HIGH);
+      }
+
+      else if (inputByte == '3'){
+      digitalWrite(7, LOW);
+      }
     }
 }
